@@ -1,0 +1,22 @@
+#header {
+    position: fixed;
+    display: flex;
+    top: 0px;
+}
+
+#header-img {
+    width: 20vw;
+}
+
+#nav-bar {}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#product {
+
+    display: flex;
+    flex-direction: row;
+}
