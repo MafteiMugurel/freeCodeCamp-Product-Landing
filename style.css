@@ -1,18 +1,31 @@
+:root {
+    --orange: #D36D33;
+    --gold: #A8873C;
+    --paco: #4C1811;
+    --rust: #A6513C;
+
+}
+
 body {
     margin: 0;
     padding: 0;
-
+    background-color: var(--rust);
 }
+
 #header {
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
+    top: 0;
+    position: fixed;
+    background-color: var(--orange)
 }
 
 #header-img {
     height: 100%;
 }
+
 .image-logo {
     width: 40%;
     height: auto;
@@ -21,32 +34,42 @@ body {
 #nav-bar {
     float: right;
     height: 100%;
+    margin-top: 10px
+
 }
 
-#nav-bar a{
-    height: 100%;  
+#nav-bar a {
+    height: 100%;
     display: table;
     float: left;
     padding: 0px 20px;
+    color: var(--paco);
 }
-ul {    
-    display: flex;  }
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+}
 
 #form {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: 85px;
     margin-bottom: 5px;
+
 }
 
 #email {
-margin-top: 5px;
-margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 
-#submit{
+#submit {
     margin-top: 5px;
     margin-bottom: 5px;
 
@@ -58,7 +81,62 @@ margin-bottom: 5px;
     flex-direction: column;
 
 }
- #video {
-    min-width: 30%; 
+
+#video {
+    min-width: 30%;
     min-height: 20%;
- }
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#product {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.product {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: var(--gold);
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+    padding: 0;
+        background-color: var(--paco);
+        color: var(--rust);
+    }
+    .container {
+    
+        width: 100%;
+        margin: 0 100px;
+    }
+    
+}
+footer {
+    margin-top: 15px;
+    float:right;
+
+
+}
+
+ul {
+ display: flex;
+ flex-flow: flex-end;
+justify-content: space-evenly;
+}
+
